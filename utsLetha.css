@@ -1,0 +1,187 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Families */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fce4ec; /* pink muda */
+    color: #4a148c; /* ungu pekat */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+/* Header */
+header {
+    background-color: #f48fb1; /* pink utama */
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+}
+
+/* Profile Image */
+.profile img {
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+/* Main Sections */
+main {
+    flex-grow: 1;
+}
+
+section {
+    background-color: #fff0f6; /* pink sangat muda */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1.8rem;
+    padding: 1.2rem 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Section Titles */
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #880e4f; /* pink gelap */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #f48fb1; /* pink bullet */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #ce93d8; /* ungu muda */
+    color: white;
+    padding: 1.2rem 0;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+footer .contact {
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer a {
+    color: #fce4ec; /* pink sangat muda */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f48fb1;
+    text-decoration: underline;
+}
+
+footer a i {
+    margin-right: 0.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    section {
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
